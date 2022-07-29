@@ -1,0 +1,282 @@
+* { 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    font-family: Helvetica;
+}
+.text-white {
+    color:#fff !important;
+}
+
+#main {
+
+}
+
+#header {
+    position: fixed;
+    height: 46px;
+    background-color: #000;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+#nav {
+    display: inline-block;
+}
+#nav, .subnav {
+    list-style-type: none;
+}
+
+#nav > li {
+    display: inline-block;
+}
+#nav li {
+    position: relative;
+}
+
+#nav >li > a {
+    color: #fff;
+}
+
+#nav li a {
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: block;   
+}
+#nav li:hover .subnav {
+    display: block;
+}
+#nav > li:hover > a,
+#nav .subnav li:hover a {
+    color: #000;
+    background-color: #ccc;
+} 
+
+#nav .subnav {
+    display: none;
+    min-width: 140px;
+    position: absolute; 
+    top: 100%;
+    left: 0;
+    background: white;  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#nav .subnav a {
+    color: #000;
+    padding: 0 12px;
+    line-height: 38px;
+}
+
+#nav .nav-arrow-down {
+    font-size: 14px;
+}
+
+#header .search-btn {
+    float: right;
+    padding: 0 21px;
+}
+
+#header .search-btn:hover {
+    cursor: pointer;
+    background-color: #f44336;
+}
+
+#header .search-icon {
+    color: #fff;
+    font-size: 20px;
+    line-height: 46px;
+ }
+#slider {
+    margin-top: 46px;
+    padding-top: 40%;
+    background:url('./img/Slider/Slider1.png') top / cover no-repeat;
+}
+
+#slider .text-content {
+    position: absolute;
+    bottom: 600px;
+    left: 55%;
+    color: rgb(77, 44, 5);
+    font-style: oblique;
+    font-size: medium;
+
+}
+#slider .text-heading {
+    font-size: larger;
+    font-style: oblique;
+
+}
+
+#slider .text-description {
+}
+
+#content {
+ 
+}
+
+#content .content-section {
+    width: 800px;
+    padding: 64px 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+}
+
+#content .section-heading {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 4px;
+}
+
+#content .section-sub-heading {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 25px;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+#content .about-text {
+    margin-top: 25px;
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.4;
+}
+
+#content .members-list {
+    margin-top: 48px;
+    overflow: hidden;
+
+}
+#content .member-item {
+    float:left;
+    width: 33.333%;
+    
+}
+
+#content .member-name {
+    font-size: 15px;
+    text-align: left;
+
+}
+
+#content .member-img1 {
+    max-width: 200px ;
+    height: auto;
+    border-radius: 5px;
+    
+}
+
+#content .member-img2 {
+    max-width: 183px ;
+    height: auto;
+    border-radius: 5px;
+    
+}
+
+#content .member-img3 {
+    max-width: 268px ;
+    height: auto;
+    border-radius: 5px;
+    
+}
+/* tour section */
+
+.tour-section {
+  background-color: #000;
+  margin-top: 60px;
+  padding: 64px 0;
+}
+
+.tickets-list {
+    background-color: #fff;
+    margin-top: 40px;
+    margin-left: 200px;
+    margin-right: 200px;
+    list-style: none;
+}
+
+.tickets-list li {
+    color: #757575;
+    font-size: 15px;
+    padding: 11px 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.tickets-list .sold-out {
+    background-color: #f44336;
+    color: #fff;
+    padding: 3px 4px;
+    margin-left: 16px;
+}
+
+.tickets-list .quantity {
+    float: right;
+}
+
+.places-list {
+    margin-top: 32px;
+    overflow: hidden;
+    padding-bottom: 32px;
+
+}
+
+.place-item {
+    float:left;
+    width: 33.33333%;
+    padding: 0 8px;
+
+}
+
+.place-heading{
+    font-size: 15px;
+    font-weight: 500px;
+}
+.place-img {
+    max-width: 250px;
+    height: auto;
+    display: block;
+}
+
+.place-img:hover {
+    opacity: 0.6;
+}
+
+.place-time {
+    margin-top: 15px;
+    color: #757575;
+}
+
+.place-desc {
+    margin-top: 15px;
+    line-height: 1.4;
+}
+
+.place-buy-btn {
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    padding: 11px 16px;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.place-buy-btn:hover {
+    color: #000;
+    background-color: #ccc;
+}
+.place-body {
+    background-color: #fff;
+}
+
+#footer {
+
+}
