@@ -191,7 +191,7 @@ html {
 /* tour section */
 
 .tour-section {
-  background-color: #000;
+  background-color: #79d7d3;
   margin-top: 60px;
   padding: 64px 0;
 }
@@ -262,11 +262,12 @@ html {
 
 .place-buy-btn {
     color: #fff;
-    background-color: #000;
+    background-color: #4d7e7c;
     text-decoration: none;
     padding: 11px 16px;
     display: inline-block;
     margin-top: 15px;
+    margin-bottom: 10px;
 }
 
 .place-buy-btn:hover {
