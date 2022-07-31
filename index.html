@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sell me</title>
+    <title>Cô giáo Kimochi</title>
+    <link rel="icon" type="image/x-icon" href="./assets/css/img/Slider/mer.png">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/css/fonts/themify-icons/themify-icons.css">
 </head>
 <body>
@@ -30,11 +32,16 @@
                 </li>
             </ul>  
             <!-- END NAV -->
-            <!-- BEGIN SEARCH BUTTON-->
+            <!-- BEGIN mobile menu BUTTON-->
+            <div id="mobile-menu" class="mobile-menu-btn">
+                <i class="menu-icon ti-menu"></i>
+            </div>
+
             <div class="search-btn">
                 <i class="search-icon ti-search"></i>
                 
             </div>
+
             <!-- END SEARCH BUTTON -->
 
         </div>
@@ -60,12 +67,12 @@
                 </div>
             
                 <div class="member-item">
-                    <p class="member-name">My lover</p>
-                    <img src="./assets/css/img/member/member2.jpg"alt="" class="member-img2">
+                    <p class="member-name">My University</p>
+                    <img src="./assets/css/img/member/member2.png"alt="" class="member-img2">
                 </div>
         
                 <div class="member-item">
-                    <p class="member-name">My Class</p>
+                    <p class="member-name">My Japanese Students</p>
                     <img src="./assets/css/img/member/member3.jpg"alt="" class="member-img3">
                 </div>
             </div>
@@ -224,6 +231,36 @@
         }
 
         modalClose.addEventListener('click', hideBuyTickets)
+    </script>
+
+    <script>
+        var header = document.getElementById('header');
+        var mobileMenu = document.getElementById('mobile-menu');
+        var headerHeight = header.clientHeight;
+            //DDongs mow menu mobile
+        mobileMenu.onclick = function() {
+            var isClose = header.clientHeight===46;
+            if (isClose) {
+                header.style.height ='auto';
+            } else {
+                header.style.height = null;
+            }
+        }
+
+        //auto close when chossing menu
+        var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+        for (var i = 0; i < menuItems.length; i++) {
+            var menuItem = menuItems[i];
+            
+            menuItem.onclick = function(event) {
+                var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
+                if (isParentMenu) {
+                    event.preventDefault();
+                } else {
+                    header.style.height = null;
+                }
+            }          
+        }
     </script>
 </body>
 </html>

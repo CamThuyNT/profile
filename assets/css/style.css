@@ -107,6 +107,13 @@ html {
     font-size: 14px;
 }
 
+#header .mobile-menu-btn {
+    position:absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+#header .mobile-menu-btn,
 #header .search-btn {
     float: right;
     padding: 0 21px;
@@ -116,7 +123,15 @@ html {
     cursor: pointer;
     background-color: #f44336;
 }
+#header .mobile-menu-btn:hover {
+    background-color: #ccc;
+}
 
+#header .mobile-menu-btn:hover .menu-icon {
+    color: #000;
+
+}
+#header .menu-icon,
 #header .search-icon {
     color: #fff;
     font-size: 20px;
@@ -135,6 +150,8 @@ html {
     color: rgb(77, 44, 5);
     font-style: oblique;
     font-size: medium;
+    /* fix */
+
 
 }
 #slider .text-heading {
@@ -152,10 +169,12 @@ html {
 
 #content .content-section {
     width: 800px;
+    max-width: 100%;
     padding: 64px 0;
     margin-left: auto;
     margin-right: auto;
     margin-top: auto;
+    /* fix */
 }
 
 #content .section-heading {
@@ -187,32 +206,33 @@ html {
 }
 #content .member-item {
     float:left;
-    width: 33.333%;
+    width: 33.33333%;
     
 }
 
 #content .member-name {
     font-size: 15px;
     text-align: left;
-
+    font-style: italic;
+    margin-bottom: 8px;
 }
 
 #content .member-img1 {
-    max-width: 200px ;
+    max-width: 165px ;
     height: auto;
     border-radius: 5px;
     
 }
 
 #content .member-img2 {
-    max-width: 183px ;
+    max-width: 201px ;
     height: auto;
     border-radius: 5px;
     
 }
 
 #content .member-img3 {
-    max-width: 268px ;
+    max-width: 264px ;
     height: auto;
     border-radius: 5px;
     
